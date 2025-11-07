@@ -30,7 +30,7 @@ const Header: React.FC = () => {
               {link.label}
             </a>
           ))}
-          <a href="/igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="bg-orange-600 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-700 transition-all duration-300 transform hover:scale-105">
+          <a href="./igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="bg-orange-600 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-700 transition-all duration-300 transform hover:scale-105">
             Baixar CV
           </a>
         </nav>

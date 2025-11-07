@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
             <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
               <LinkedInIcon className="w-8 h-8" />
             </a>
-            <a href="/igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="flex items-center space-x-2 text-gray-400 hover:text-orange-500 transition-colors duration-300">
+            <a href="./igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="flex items-center space-x-2 text-gray-400 hover:text-orange-500 transition-colors duration-300">
               <DownloadIcon className="w-8 h-8" />
               <span className="font-semibold">Baixar CV Completo</span>
             </a>
