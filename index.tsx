@@ -1,9 +1,9 @@
 // Note: React and ReactDOM are loaded globally from the HTML file.
 // All components are defined in this single file to avoid module loading issues with Babel Standalone.
 
-// FIX: Import React and ReactDOM to resolve TypeScript errors and provide proper types.
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+// FIX: Import React and ReactDOM to provide their types to TypeScript and resolve namespace errors.
+import * as React from 'react';
+import * as ReactDOM from 'react-dom/client';
 
 // FROM: components/Icons.tsx
 const CostIcon: React.FC<{ className?: string }> = ({ className }) => (
@@ -64,7 +64,6 @@ const Header: React.FC = () => {
               {link.label}
             </a>
           ))}
-          {/* FIX: Replaced disabled button with a functional download link. */}
           <a href="./igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="bg-orange-600 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-700 transition-all duration-300 transform hover:scale-105">
             Baixar CV
           </a>
@@ -93,7 +92,6 @@ const Hero: React.FC = () => {
           <a href="#projetos" className="bg-orange-600 text-white font-bold py-3 px-8 rounded-md text-lg hover:bg-orange-700 transition-all duration-300 transform hover:scale-105">
             Ver Projetos
           </a>
-          {/* FIX: Replaced disabled button with a functional download link. */}
           <a href="./igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="border-2 border-orange-500 text-white font-bold py-3 px-8 rounded-md text-lg hover:bg-orange-500 transition-all duration-300 transform hover:scale-105">
             Baixar CV
           </a>
@@ -281,7 +279,6 @@ const Contact: React.FC = () => {
             <a href="https://www.linkedin.com/in/igor-de-castro-gon%C3%A7alves-058b8b17b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
               <LinkedInIcon className="w-8 h-8" />
             </a>
-            {/* FIX: Replaced disabled div with a functional download link. */}
             <a href="./igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="flex items-center space-x-2 text-gray-400 hover:text-orange-500 transition-colors duration-300">
               <DownloadIcon className="w-8 h-8" />
               <span className="font-semibold">Baixar CV Completo</span>
