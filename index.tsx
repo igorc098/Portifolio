@@ -1,7 +1,6 @@
-// FIX: Replace failing triple-slash directives with standard module imports
-// for React and ReactDOM to resolve all type-checking errors.
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+// Fix: Add imports for React and ReactDOM to provide types for TypeScript.
+import * as React from 'react';
+import * as ReactDOM from 'react-dom/client';
 
 // Note: React and ReactDOM are loaded globally from the HTML file.
 // All components are defined in this single file to avoid module loading issues with Babel Standalone.
