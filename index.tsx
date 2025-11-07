@@ -64,9 +64,9 @@ const Header: React.FC = () => {
               {link.label}
             </a>
           ))}
-          <a href="./igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="bg-orange-600 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-700 transition-all duration-300 transform hover:scale-105">
+          <button disabled className="bg-gray-500 text-white font-bold py-2 px-4 rounded-md cursor-not-allowed">
             Baixar CV
-          </a>
+          </button>
         </nav>
       </div>
     </header>
@@ -92,9 +92,9 @@ const Hero: React.FC = () => {
           <a href="#projetos" className="bg-orange-600 text-white font-bold py-3 px-8 rounded-md text-lg hover:bg-orange-700 transition-all duration-300 transform hover:scale-105">
             Ver Projetos
           </a>
-          <a href="./igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="border-2 border-orange-500 text-white font-bold py-3 px-8 rounded-md text-lg hover:bg-orange-500 transition-all duration-300 transform hover:scale-105">
+          <button disabled className="border-2 border-gray-500 text-gray-400 font-bold py-3 px-8 rounded-md text-lg cursor-not-allowed">
             Baixar CV
-          </a>
+          </button>
         </div>
       </div>
     </section>
@@ -276,13 +276,13 @@ const Contact: React.FC = () => {
         <div className="text-center mt-12">
           <p className="text-gray-400 mb-4">Ou me encontre nas redes:</p>
           <div className="flex justify-center items-center space-x-6">
-            <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
+            <a href="https://www.linkedin.com/in/igor-de-castro-gon%C3%A7alves-058b8b17b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-orange-500 transition-colors duration-300">
               <LinkedInIcon className="w-8 h-8" />
             </a>
-            <a href="./igor_goncalves_cv.md" download="igor_goncalves_cv.md" className="flex items-center space-x-2 text-gray-400 hover:text-orange-500 transition-colors duration-300">
+            <div className="flex items-center space-x-2 text-gray-500 cursor-not-allowed">
               <DownloadIcon className="w-8 h-8" />
               <span className="font-semibold">Baixar CV Completo</span>
-            </a>
+            </div>
           </div>
         </div>
       </div>
