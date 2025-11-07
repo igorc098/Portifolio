@@ -1,5 +1,5 @@
 import React from 'react';
-import { CostIcon, QualityIcon, RiskIcon } from './Icons';
+import { CostIcon, QualityIcon, RiskIcon } from './Icons.tsx';
 
 const ValueCard: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({ icon, title, children }) => (
   <div className="bg-slate-800 p-6 rounded-lg text-center transform transition-transform duration-300 hover:-translate-y-2">

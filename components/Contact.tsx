@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkedInIcon, DownloadIcon } from './Icons';
+import { LinkedInIcon, DownloadIcon } from './Icons.tsx';
 
 const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {

@@ -30,6 +30,9 @@
 </head>
   <body class="bg-slate-900 text-gray-300">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Load Babel for in-browser JSX/TSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Let Babel transpile the main script. Presets are needed for JSX and TypeScript -->
+    <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
 </html>
