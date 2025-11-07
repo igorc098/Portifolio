@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF--8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Igor de Castro Gonçalves | Portfólio</title>
@@ -17,21 +17,27 @@
         font-family: 'Montserrat', sans-serif;
       }
     </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react": "https://aistudiocdn.com/react@^19.2.0",
-        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-        "react/": "https://aistudiocdn.com/react@^19.2.0/"
-      }
-    }
-    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
 </head>
   <body class="bg-slate-900 text-gray-300">
     <div id="root"></div>
+
+    <!-- Load React and ReactDOM from CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
     <!-- Load Babel for in-browser JSX/TSX transformation -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <!-- Let Babel transpile the main script. Presets are needed for JSX and TypeScript -->
+    
+    <!-- Let Babel transpile the main script. -->
     <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
 </html>

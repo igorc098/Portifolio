@@ -1,8 +1,12 @@
+// Fix: Add React and ReactDOM imports to resolve type errors.
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 // Note: All components are defined in this single file to avoid module loading issues
 // with Babel Standalone on static hosting platforms like GitHub Pages.
 
-import * as React from 'react';
-import * as ReactDOM from 'react-dom/client';
+// React and ReactDOM are now loaded from CDN and available globally.
+// No imports are needed.
 
 // FROM: components/Icons.tsx
 
